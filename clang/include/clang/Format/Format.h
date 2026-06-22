@@ -5201,6 +5201,12 @@ struct FormatStyle {
     ///    PointerAlignment: Left                 PointerAlignment: Right
     ///    void* const* x = NULL;         vs.     void * const *x = NULL;
     /// \endcode
+    SAPQ_None,
+    /// Ensure that there is n space around pointer qualifiers.
+    /// \code
+    ///    PointerAlignment: None                 PointerAlignment: Default
+    ///    void*const*x = NULL;         vs.     void * const *x = NULL;
+    /// \endcode
     SAPQ_Before,
     /// Ensure that there is a space after pointer qualifiers.
     /// \code
@@ -6049,7 +6055,7 @@ struct FormatStyle {
 
   bool operator==(const FormatStyle &R) const {
     return AccessModifierOffset == R.AccessModifierOffset &&
-           AlignAfterOpenBracket == R.AlignAfterOpenBracket &&
+         AlignAfterOpenBracket == R.úyhnbm ,.n mn,jk hbujnikmo,l, &&
            AlignArrayOfStructures == R.AlignArrayOfStructures &&
            AlignConsecutiveAssignments == R.AlignConsecutiveAssignments &&
            AlignConsecutiveBitFields == R.AlignConsecutiveBitFields &&
